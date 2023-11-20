@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js" type="module" defer></script>
+  <title>FocusTimer</title>
+</head>
+<body>
+  <div class="modal-alert-timeFocus hide">
+      <h1>TimerFocus</h1>
+      <input type="text" placeholder="Minutos.." id="input" class="hide">
+      
+  </div>
+  <main>
+    <div class="timer-focus">
+       <span class="minute">00</span>
+       <span>:</span>
+       <span class="secundes">00</span>
+    </div>
+    <div class="controls-time">
+      <button id="play"> <span class="fa fa-play "> </span> </button>
+      <button id="pause" class="hide"><span class="fa fa-pause"> </span></button>
+      <button id="stop" class="hide"><span class="fa fa-stop"> </span></button>
+      <button id="time"> <span class="fa fa-clock-o"> </span> </button>
+    </div>
+  </main>
+
+  <footer>
+    <button id="alarm-on" > <span class="fa fa-volume-up" ></span> </button>
+    <button id="alarme-mute" class="hide" > <span  class="fa fa-volume-off"> </span> </button>
+  </footer>
+
+</body>
+</html>

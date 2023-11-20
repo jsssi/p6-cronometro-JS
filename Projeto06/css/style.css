@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+  padding:  0;
+  margin :  0;
+  border :  0;
+
+  box-sizing: border-box;
+}
+:root{  
+  --ff-all:'Roboto', sans-serif;
+
+  font-size: 62.5%;
+}
+body{
+  background:#000;
+
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  
+
+  height: 100vh;
+}
+.modal-alert-timeFocus{
+  background: #fff;
+
+  position: absolute;
+  top  : 0;
+
+ display         : flex;
+ align-items     : center;
+ justify-content : center;
+ flex-direction   : column; 
+
+  height: 15vh;
+  width: 30vw;
+  
+  border-radius: 0 0 1.0rem 1.0rem;
+}
+.modal-alert-timeFocus h1{
+  font-size: clamp(1.0rem ,1rem + 3vw , 3.0rem);
+  font-family: var(--ff-all);
+}
+.modal-alert-timeFocus input{
+  background: rgb(36, 95, 95);
+  
+
+  width: 50%;
+  height: 5vh;
+  padding: clamp(.5rem,.5rem + 1vw, 1.0rem);
+  border-radius: .6rem;
+  margin-top: .6rem;
+  
+}
+.modal-alert-timeFocus input::placeholder,
+.modal-alert-timeFocus input{
+  font-family: var(--ff-all);
+  color     : #000;
+
+  font-size: 1.5rem;
+}
+.modal-alert-timeFocus button{
+ position: absolute;
+ bottom: 1.0rem;
+ right: 1.0rem;
+
+ color: #000;
+
+ font-size: clamp(1.6rem , 1rem + 2vw , 2.5rem);
+}
+
+main{
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  flex-direction  : column;
+
+  gap: 1.0rem;
+
+}
+.hide{
+  display: none;
+}
+.timer-focus{
+  color: #fff;
+  
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+
+  gap: .5rem;
+}
+.timer-focus span{
+  font-size   : clamp(5.2rem , 5rem + 10vw , 10rem);
+  font-family : var(--ff-all);
+  line-height : 2.0rem;
+
+  
+  margin-bottom: 5.0rem;
+}
+.controls-time{
+  background: rgb(64, 64, 129);
+
+  display         : flex;
+  align-items     : center;
+  justify-content : space-around;
+  gap: 1.0rem;
+  
+  height          : clamp(5rem , 5rem + 10Vh , 7rem);
+  width           : clamp(10rem , 10rem + 30VW , 22.2rem);
+  padding         : 1.0rem;
+  border-radius   : 2.0rem;
+
+  
+
+  
+}
+
+button{
+  background : none;
+  color      : #fff;
+  
+  font-size: clamp(3.0rem , 2.0rem + 2vw , 4.0rem);
+
+  cursor: pointer;
+
+  transition: all 1s ease-in-out;
+}
+button:hover{
+  color:cyan;
+}
+footer button{
+  position: absolute;
+
+  bottom : 1.0rem;
+  right  : 2.0rem;
+
+  
+}
